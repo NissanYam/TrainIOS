@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WelcomeController" customModule="TrainTrack" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="KAy-sz-cxv" userLabel="LogInBackground">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Break your limits" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmz-I1-fJR">
+                                <rect key="frame" x="58" y="79" width="277" height="43"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="97A-Ga-mYn">
+                                <rect key="frame" x="0.0" y="672.66666666666663" width="393" height="155.33333333333337"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beh-Vd-6Oo" userLabel="LogIn">
+                                        <rect key="frame" x="20" y="19.999999999999996" width="353" height="47.666666666666657"/>
+                                        <color key="backgroundColor" red="0.023529411760000001" green="0.41176470590000003" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Log In">
+                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <color key="baseForegroundColor" systemColor="systemGray6Color"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="LogInPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L6g-DY-Lpg"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="iqh-76-iAW">
+                                        <rect key="frame" x="20" y="77.666666666666742" width="353" height="47.666666666666657"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have any account ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m35-cU-l4r" userLabel="text">
+                                                <rect key="frame" x="0.0" y="13.666666666666627" width="191.33333333333334" height="20.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQF-9b-irq" userLabel="SignUp">
+                                                <rect key="frame" x="191.33333333333337" y="6.6666666666666288" width="161.66666666666663" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
+                                                <connections>
+                                                    <action selector="SignInPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="flP-Zw-O2n"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <edgeInsets key="layoutMargins" top="20" left="20" bottom="20" right="20"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="97A-Ga-mYn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4a4-KN-8Mt"/>
+                            <constraint firstAttribute="bottom" secondItem="KAy-sz-cxv" secondAttribute="bottom" id="55I-Bl-fft"/>
+                            <constraint firstItem="KAy-sz-cxv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8VA-gE-0Ob"/>
+                            <constraint firstItem="KAy-sz-cxv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BLn-9X-i8P"/>
+                            <constraint firstItem="nmz-I1-fJR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="cdd-lo-NYw"/>
+                            <constraint firstItem="97A-Ga-mYn" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="10" id="lWw-0t-Z9v"/>
+                            <constraint firstItem="KAy-sz-cxv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mGB-QL-FkC"/>
+                            <constraint firstItem="nmz-I1-fJR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q4u-el-WVA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="97A-Ga-mYn" secondAttribute="trailing" id="wzH-ns-M4d"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="LogInBotton" destination="beh-Vd-6Oo" id="WDS-nL-Mds"/>
+                        <outlet property="SignInButton" destination="QQF-9b-irq" id="CRB-yU-EXl"/>
+                        <segue destination="Isa-R0-uXO" kind="show" identifier="goToLogInStoryboard" id="1vS-0a-f35"/>
+                        <segue destination="uDC-GJ-x1r" kind="show" identifier="goToSignUpStoryboard" id="ORY-cg-6qx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20.610687022900763" y="4.9295774647887329"/>
+        </scene>
+        <!--LogInVC-->
+        <scene sceneID="uOF-jq-sn8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LogIn" referencedIdentifier="LogInVC" id="Isa-R0-uXO" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="w8H-0Y-bUw"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dLA-j5-Be5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="738" y="73"/>
+        </scene>
+        <!--SignUpVC-->
+        <scene sceneID="thG-Z8-nxs">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SignUp" referencedIdentifier="SignUpVC" id="uDC-GJ-x1r" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="B5D-b8-1Hg"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1tz-lF-uIb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="648" y="168"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backgroundImage" width="1500" height="1001"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

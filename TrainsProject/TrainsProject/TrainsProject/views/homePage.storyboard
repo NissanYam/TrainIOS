@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home Page Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="homePageVC" id="Y6W-OH-hqX" customClass="HomePageController" customModule="TrainsProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundHome" translatesAutoresizingMaskIntoConstraints="NO" id="v21-cd-pRu">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uow-Lj-K6Y">
+                                <rect key="frame" x="5" y="59" width="383" height="705"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZhR-GF-H2C">
+                                        <rect key="frame" x="266" y="0.0" width="117" height="58"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="81.670000000000002" id="CHu-AN-hWK"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="81.670000000000002" id="QI7-Ah-EeX"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34.329999999999998" id="vyU-ts-VTA"/>
+                                            <constraint firstAttribute="height" constant="34.329999999999998" id="z4C-zB-fMd"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Log out"/>
+                                        <connections>
+                                            <action selector="logOutPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="WbV-Ju-89W"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gyN-yn-yT8" userLabel="text">
+                                        <rect key="frame" x="0.0" y="0.0" width="383" height="89"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello User1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d6u-1f-64A">
+                                                <rect key="frame" x="0.0" y="0.0" width="184.66666666666666" height="42"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Training history:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="plr-Ci-yrK">
+                                                <rect key="frame" x="0.0" y="47" width="261.33333333333331" height="42"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tgj-N4-GuR">
+                                        <rect key="frame" x="0.0" y="99" width="383" height="561.66666666666663"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chq-65-pdt">
+                                        <rect key="frame" x="0.0" y="670.66666666666663" width="383" height="34.333333333333371"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Add New Train"/>
+                                        <connections>
+                                            <action selector="addNewTrain:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="7Pn-Vh-yBQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="chq-65-pdt" secondAttribute="trailing" id="4J6-cV-WSS"/>
+                                    <constraint firstItem="chq-65-pdt" firstAttribute="top" secondItem="tgj-N4-GuR" secondAttribute="bottom" constant="20" id="ErF-2Q-PgX"/>
+                                    <constraint firstAttribute="trailing" secondItem="gyN-yn-yT8" secondAttribute="trailing" id="Rlp-Zq-VV2"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZhR-GF-H2C" secondAttribute="trailing" id="SfM-r6-4vJ"/>
+                                    <constraint firstItem="tgj-N4-GuR" firstAttribute="top" secondItem="gyN-yn-yT8" secondAttribute="bottom" constant="10" id="VRr-Y4-DYe"/>
+                                    <constraint firstItem="tgj-N4-GuR" firstAttribute="leading" secondItem="uow-Lj-K6Y" secondAttribute="leading" id="XUY-Kv-aDZ"/>
+                                    <constraint firstItem="gyN-yn-yT8" firstAttribute="leading" secondItem="uow-Lj-K6Y" secondAttribute="leading" id="dvI-Ce-fP7"/>
+                                    <constraint firstItem="ZhR-GF-H2C" firstAttribute="top" secondItem="uow-Lj-K6Y" secondAttribute="top" id="fWA-Pz-jkX"/>
+                                    <constraint firstItem="gyN-yn-yT8" firstAttribute="top" secondItem="uow-Lj-K6Y" secondAttribute="top" id="h5U-ue-MJW"/>
+                                    <constraint firstItem="chq-65-pdt" firstAttribute="top" secondItem="tgj-N4-GuR" secondAttribute="bottom" constant="10" id="lv3-QU-u2u"/>
+                                    <constraint firstAttribute="bottom" secondItem="chq-65-pdt" secondAttribute="bottom" id="vXi-IJ-dcQ"/>
+                                    <constraint firstItem="chq-65-pdt" firstAttribute="leading" secondItem="uow-Lj-K6Y" secondAttribute="leading" id="yzD-mm-l9B"/>
+                                    <constraint firstAttribute="trailing" secondItem="tgj-N4-GuR" secondAttribute="trailing" id="zp5-fp-kcb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="uow-Lj-K6Y" secondAttribute="trailing" constant="5" id="6JZ-L6-zv0"/>
+                            <constraint firstItem="uow-Lj-K6Y" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="5" id="Ur0-zN-RPd"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="uow-Lj-K6Y" secondAttribute="bottom" constant="5" id="pWf-9e-8zk"/>
+                            <constraint firstItem="uow-Lj-K6Y" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="qjv-0X-cPw"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="UserNameLable" destination="d6u-1f-64A" id="QqK-kU-zeP"/>
+                        <outlet property="tableViewTrainings" destination="tgj-N4-GuR" id="zoB-bH-QSl"/>
+                        <outlet property="titleTrainings" destination="plr-Ci-yrK" id="5eh-JE-bQJ"/>
+                        <segue destination="eNa-6m-DrM" kind="show" identifier="goToAddingNewTrainingStoryboard" id="n5p-8w-xEC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29.770992366412212" y="4.9295774647887329"/>
+        </scene>
+        <!--AddingNewTrainingVC-->
+        <scene sceneID="xrj-iO-k8Z">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddingNewTraning" referencedIdentifier="AddingNewTrainingVC" id="eNa-6m-DrM" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="dql-a8-Leb"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="khB-Cd-uUD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="828" y="-28"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backgroundHome" width="900" height="1600"/>
+    </resources>
+</document>
